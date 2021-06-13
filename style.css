@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+html {
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+}
+.map-bg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 40rem) {
+  .map-bg {
+    width: 100vh;
+    height: 100vw;
+    transform: translatex(calc(50vw - 50%)) translatey(calc(50vh - 50%))
+      rotate(90deg);
+  }
+}
