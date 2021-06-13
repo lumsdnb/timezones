@@ -1,7 +1,10 @@
+const inputSlider = document.querySelector('.slider-input');
+
 const zoneSelected = (e) => {
-  console.log((e.screenX / window.screen.width) * 24);
-  //window.screen.width;
-  //window.screen.height;
+  const xClick = Math.round((e.x / window.screen.width) * 24);
+  inputSlider.value = xClick;
+  console.log(xClick);
+  console.log(inputSlider);
 };
 
 document.body.addEventListener('click', zoneSelected, true);
